@@ -215,7 +215,7 @@ nav ul li a {
 @media only screen and (max-width: 800px) {
     nav {
         flex: 0;
-    }
+    } 
 
     nav ul {
         position: fixed;

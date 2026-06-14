@@ -220,19 +220,19 @@ nav ul li a {
     nav ul {
         position: fixed;
         top: 0;
-        right: -260px;
+        left: -260px;
         width: 250px;
         height: 100vh;
         background: orange;
         padding-top: 90px;
         display: block;
-        text-align: left;
-        transition: right 0.4s ease;
+        text-align: right;
+        transition: left 0.4s ease;
         z-index: 999;
     }
 
     nav ul.active {
-        right: 0;
+        left: 0;
     }
 
     nav ul li {
@@ -242,7 +242,7 @@ nav ul li a {
 
     nav ul li a {
         font-size: 18px;
-        color: black;
+        color: white;
     }
 
     .menu-icon {

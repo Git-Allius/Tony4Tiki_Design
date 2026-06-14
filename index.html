@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tony4Tiki | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Navigation Bar -->
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.png" width="150px">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Drinks</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icons">
+                    <img src="images/profile_icon.png" onclick="goToAccount()">
+                    <img src="images/cart_icon.png" onclick="goToCart()">
+                    <img src="images/menu_icon.png" class="menu-icon" onclick="toggleMenu()">
+                </div>
+            </div>
+
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="col-2 hero-description">
+                    <h1>Making Cocktails Worth Drinking</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget ultricies nunc nisl eget nunc.</p>
+                    <div class="hero-buttons">
+                        <a href="drinks.html" class="btn">Explore Drinks &#8594;</a>
+                        <a href="contact.html" class="contact-btn">Contact Us   &#9742;</a>
+                    </div>
+                </div>
+                <div class="col-2 hero-image">
+                    <img src="images/intro.png">
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
+
+<!-- JavaScript -->
+<script src="script.js"></script>

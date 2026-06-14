@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
+/* General */
 * {
     margin: 0;
     padding: 0;
@@ -7,29 +9,97 @@
     font-family: 'Poppins', sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 body {
     background: black;
     color: white;
 }
 
-header {
-    min-height: 100vh;
+a {
+    text-decoration: none;
+    color: white;
 }
 
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+/* Containers */
 .container {
     max-width: 1500px;
     margin: auto;
 }
 
-/* =========================
-   NAVBAR
-========================= */
+.small-container {
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
 
+/* Titles */
+.title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    padding-bottom: 10px;
+}
+
+.title::after {
+    content: '';
+    background: orange;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Buttons */
+.btn {
+    background: orange;
+    padding: 10px 35px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: rgb(169, 68, 4);
+    transform: translateY(-3px);
+}
+
+.contact-btn {
+    border: 2px solid white;
+    padding: 8px 35px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.contact-btn:hover {
+    background: white;
+    color: black;
+    transform: translateY(-3px);
+}
+
+/* Header */
+header {
+    background: black;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Main */
+main {
+    background: white;
+    color: black;
+}
+
+/* Navbar */
 .navbar {
     display: flex;
     align-items: center;
@@ -79,16 +149,17 @@ nav ul li a {
     display: none;
 }
 
-/* =========================
-   HERO
-========================= */
-
+/* Hero */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
     padding: 60px 80px;
+}
+
+.hero h1 {
+    font-family: 'Fjalla One', sans-serif;
 }
 
 .col-2 {
@@ -100,7 +171,7 @@ nav ul li a {
 }
 
 .hero-description h1 {
-    font-size: 52px;
+    font-size: 50px;
     line-height: 1.2;
     margin-bottom: 25px;
 }
@@ -130,41 +201,103 @@ nav ul li a {
     white-space: nowrap;
 }
 
-/* =========================
-   BUTTONS
-========================= */
+/* About */
+.about-section {
+    padding: 80px 0;
+}
 
-.btn {
-    background: orange;
-    padding: 10px 35px;
-    border-radius: 30px;
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.about-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 430px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-description {
+    max-width: 600px;
+    text-align: center;
+}
+
+.about-description h2 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about-description .title {
+    padding-bottom: 10px;
+}
+
+.about-description p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.about-description .btn {
+    display: inline-block;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Drinks */
+.drinks-section {
+    padding: 80px 0;
+    background: rgb(34, 30, 30);
+    color: white;
+}
+
+.drinks-section .title {
+    color: white;
+}
+
+.drinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.drink-card {
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
     transition: .3s;
 }
 
-.btn:hover {
-    background: rgb(169, 68, 4);
-    transform: translateY(-3px);
+.drink-card:hover {
+    transform: translateY(-8px);
 }
 
-.contact-btn {
-    border: 2px solid white;
-    padding: 8px 35px;
-    border-radius: 30px;
-    transition: .3s;
+.drink-card img {
+    width: 100%;
+    max-width: 280px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    margin-bottom: 15px;
 }
 
-.contact-btn:hover {
-    background: white;
-    color: black;
-    transform: translateY(-3px);
+.drink-card h4 {
+    color: white;
+    font-size: 18px;
 }
 
-/* =========================
-   TABLET
-========================= */
-
+/* Tablet */
 @media (max-width: 1000px) {
-
     .navbar {
         padding: 25px 35px;
     }
@@ -199,12 +332,8 @@ nav ul li a {
     }
 }
 
-/* =========================
-   MOBILE NAV
-========================= */
-
+/* Mobile Nav */
 @media (max-width: 800px) {
-
     .menu-icon {
         display: block;
     }
@@ -235,14 +364,15 @@ nav ul li a {
         color: white;
         font-size: 18px;
     }
+
+    .drinks-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 }
 
-/* =========================
-   PHONE
-========================= */
-
+/* Phone */
 @media (max-width: 600px) {
-
     .navbar {
         padding: 18px 22px;
     }
@@ -276,6 +406,7 @@ nav ul li a {
     .hero-description {
         order: 2;
         max-width: 100%;
+        padding-bottom: 25px;
     }
 
     .hero-image img {
@@ -299,5 +430,40 @@ nav ul li a {
         font-size: 13px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-image {
+        order: 1;
+    }
+
+    .about-description {
+        order: 2;
+        max-width: 100%;
+    }
+
+    .about-image img {
+        max-width: 260px;
+    }
+
+    .about-description h2 {
+        font-size: 32px;
+    }
+
+    .about-description p {
+        font-size: 15px;
+    }
+
+    .drinks-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .drink-card img {
+        max-width: 240px;
     }
 }

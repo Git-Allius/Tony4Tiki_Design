@@ -431,8 +431,9 @@ footer {
     display: flex;
     justify-content: center;
     gap: 25px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-bottom: 25px;
+    align-items: center;
 }
 
 .footer-links a,
@@ -440,6 +441,7 @@ footer {
     color: white;
     font-weight: 500;
     transition: .3s;
+    white-space: nowrap;
 }
 
 .footer-links a:hover,
@@ -699,5 +701,13 @@ footer {
     .gallery-card img {
         width: 100%;
         max-width: 320px;
+    }
+
+    .footer-links, .footer-socials {
+        gap: 12px;
+    }
+
+    .footer-links a, .footer-socials a {
+        font-size: 13px;
     }
 }

@@ -3,9 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tony4Tiki | Gallery</title>
+    <title>Tony4Tiki | Our Gallery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <!-- Navigation Bar -->
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="150px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="drinks.html">Drinks</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-icons">
+                    <a href="account.html"><img src="images/profile_icon.png"></a>
+                    <a href="cart.html"><img src="images/cart_icon.png"></a>
+                    <img src="images/menu_icon.png" class="menu-icon" onclick="toggleMenu()">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Gallery -->
+        <div class="gallery-page">
+            <div class="small-container gallery-container">
+                <h2 class="title">Gallery</h2>
+
+                <div class="gallery-grid">
+                    <div class="gallery-card">
+                        <img src="images/gallery.jpg">
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="images/gallery.jpg">
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="images/gallery.jpg">
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="images/gallery.jpg">
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="images/gallery.jpg">
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="images/gallery.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="small-container">
+
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Tony4Tiki Logo">
+            </div>
+
+            <p class="footer-description">
+                Craft cocktails, tiki recipes, and island-inspired drinks.
+            </p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="drinks.html">Cocktails</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-socials">
+                <a href="#">Instagram</a>
+                <a href="#">TikTok</a>
+            </div>
+
+            <p class="footer-responsibility">
+                Please enjoy responsibly.
+            </p>
+
+            <p class="footer-copyright">
+                © 2026 Tony4Tiki. All Rights Reserved.
+            </p>
+
+        </div>
+    </footer>
 </body>
 </html>
+
+<!-- JavaScript -->
+<script src="script.js"></script>

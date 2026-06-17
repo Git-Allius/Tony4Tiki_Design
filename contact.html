@@ -35,7 +35,26 @@
     </header>
 
     <main>
-        
+        <div class="contact-page">
+            <div class="small-container">
+                <h2 class="title">Contact Us</h2>
+
+                <div class="contact-container">
+
+                    <form class="contact-form" onsubmit="sendContactMessage(event)">
+                        <input type="text" id="contactName" placeholder="Full Name" required>
+                        <input type="tel" id="contactPhone" placeholder="Phone Number" required>
+                        <input type="text" id="contactAddress" placeholder="Email Address" required>
+
+                        <textarea id="contactMessage" placeholder="Write your message..." required></textarea>
+
+                        <button type="submit" class="btn contact-submit">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->

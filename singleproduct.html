@@ -35,7 +35,72 @@
     </header>
 
     <main>
-        
+        <div class="single-product-page">
+            <div class="small-container single-product-container">
+
+                <div class="single-product-image">
+                    <img src="images/drink.png" alt="Drink Name">
+                </div>
+
+                <div class="single-product-info">
+                    <h1>Cocktail</h1>
+                    <h3>$8.00</h3>
+
+                    <p>
+                        A refreshing island-inspired drink made with tropical flavors,
+                        citrus, and a smooth tiki-style finish.
+                    </p>
+
+                    <div class="quantity-box">
+                        <button onclick="decreaseQty()">-</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button onclick="increaseQty()">+</button>
+                    </div>
+
+                    <div class="btn add-cart-btn" onclick="addToCartAndGo()">
+                        Add to Cart
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Similar Drinks -->
+        <div class="similar-drinks">
+            <div class="small-container">
+
+                <h2 class="title">You Might Also Like</h2>
+
+                <div class="similar-grid">
+
+                    <a href="singleproduct.html" class="similar-card">
+                        <img src="images/drink.png">
+                        <h4>Drink Name</h4>
+                        <p>$0.00</p>
+                    </a>
+
+                    <a href="singleproduct.html" class="similar-card">
+                        <img src="images/drink.png">
+                        <h4>Drink Name</h4>
+                        <p>$0.00</p>
+                    </a>
+
+                    <a href="singleproduct.html" class="similar-card">
+                        <img src="images/drink.png">
+                        <h4>Drink Name</h4>
+                        <p>$0.00</p>
+                    </a>
+
+                    <a href="singleproduct.html" class="similar-card">
+                        <img src="images/drink.png">
+                        <h4>Drink Name</h4>
+                        <p>$0.00</p>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->

@@ -35,7 +35,40 @@
     </header>
 
     <main>
-        
+        <div class="checkout-page">
+            <div class="small-container">
+                <h2 class="title">Checkout</h2>
+
+                <div class="checkout-container">
+
+                    <form class="checkout-form" onsubmit="placeOrder(event)">
+                        <h3>Order Information</h3>
+
+                        <input type="text" id="customerName" placeholder="Full Name" required>
+                        <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+                        <input type="email" id="customerEmail" placeholder="Email Address" required>
+
+                        <textarea id="orderNotes" placeholder="Order notes, pickup details, or special requests"></textarea>
+
+                        <button type="submit" class="btn checkout-submit">
+                            Place Order
+                        </button>
+                    </form>
+
+                    <div class="checkout-summary">
+                        <h3>Order Summary</h3>
+
+                        <div id="checkoutItems"></div>
+
+                        <div class="checkout-total">
+                            <span>Total</span>
+                            <strong id="checkoutTotal">$0.00</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->

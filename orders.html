@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tony4Tiki | Login</title>
+    <title>Tony4Tiki | Your Orders</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,45 +35,13 @@
     </header>
 
     <main>
-        <div class="account-page">
+        <div class="orders-page">
             <div class="small-container">
-                <h2 class="title">Account</h2>
 
-                <div class="account-box">
+                <h2 class="title">Your Orders</h2>
 
-                    <div class="form-toggle">
-                        <div class="toggle-slider" id="toggleSlider"></div>
-                        <button
-                            id="loginToggle"
-                            class="active"
-                            onclick="showLogin()">
-                            Login
-                        </button>
-                        <button
-                            id="registerToggle"
-                            onclick="showRegister()">
-                            Register
-                        </button>
-                    </div>
+                <div id="ordersContainer"></div>
 
-                    <form id="loginForm" class="account-form" onsubmit="loginUser(event)">
-                        <input type="text" id="loginUsername" placeholder="Username" required>
-                        <input type="password" id="loginPassword" placeholder="Password" required>
-
-                        <button type="submit" class="btn account-btn">Login</button>
-                    </form>
-
-                    <form id="registerForm" class="account-form hidden" onsubmit="registerUser(event)">
-                        <input type="text" id="registerUsername" placeholder="Username" required>
-                        <input type="email" id="registerEmail" placeholder="Email Address" required>
-                        <input type="password" id="registerPassword" placeholder="Password" required>
-
-                        <button type="submit" class="btn account-btn">Register</button>
-                    </form>
-
-                    <div id="accountMessage"></div>
-
-                </div>
             </div>
         </div>
     </main>

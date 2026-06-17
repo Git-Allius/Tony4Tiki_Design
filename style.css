@@ -1205,7 +1205,11 @@ footer {
     .about-page-text {
         width: 100%;
         max-width: 750px;
-        text-align: left;
+        text-align: center;
+    }
+
+    .about-page-full {
+        text-align: center;
     }
 
     .about-page-image img {
@@ -1430,6 +1434,7 @@ footer {
 
     .about-page-content {
         gap: 30px;
+        text-align: center;
     }
 
     .about-page-image img {
@@ -1440,6 +1445,7 @@ footer {
     .about-page-full p {
         font-size: 15px;
         line-height: 1.7;
+        text-align: center;
     }
 
     .contact-page {
